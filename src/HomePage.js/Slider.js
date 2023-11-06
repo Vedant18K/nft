@@ -13,7 +13,7 @@ const Slider = () => {
                 </div>
             </div>
             <div>
-                <img src={slider1} className='h-[589px] w-[589px]'/>
+                <img  alt="slider1" src={slider1} className='h-[589px] w-[589px]'/>
             </div>
         </div>
     )

@@ -32,7 +32,7 @@ const HoverEffectComponent = (props) => {
                         : ""
                     } w-[300px] h-[300px]    rounded-md`}
                     src={item.image}
-                    alt="Live Bidding Image"
+                    alt="Live Bidding "
                   />
                   <div className="p-4">
                     <div>{item.name}</div>
