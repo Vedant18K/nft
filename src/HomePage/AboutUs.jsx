@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import backgroundimage1 from "../Images/bg-image-22.webp";
@@ -6,6 +6,51 @@ import backgroundimage2 from "../Images/bg-image-6.webp";
 import CountUp from "react-countup";
 
 const AboutUs = () => {
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+  const [count4, setCount4] = useState(0);
+
+  useEffect(() => {
+    const timer1 = setInterval(() => {
+      if (count1 < 100) {
+        setCount1(count1 + 1);
+      }
+    }, 10);
+
+    return () => clearInterval(timer1);
+  }, [count1]);
+
+  useEffect(() => {
+    const timer2 = setInterval(() => {
+      if (count2 < 500) {
+        setCount2(count2 + 1);
+      }
+    }, 10);
+
+    return () => clearInterval(timer2);
+  }, [count2]);
+
+  useEffect(() => {
+    const timer3 = setInterval(() => {
+      if (count3 < 700) {
+        setCount3(count3 + 1);
+      }
+    }, 10);
+
+    return () => clearInterval(timer3);
+  }, [count3]);
+
+  useEffect(() => {
+    const timer4 = setInterval(() => {
+      if (count4 < 900) {
+        setCount4(count4 + 1);
+      }
+    }, 10);
+
+    return () => clearInterval(timer4);
+  }, [count4]);
+
   return (
     <div>
       <NavBar />
@@ -62,28 +107,23 @@ const AboutUs = () => {
         </div>
       </div>
       <div>
-        <div className=" text-[24px] font-bold pt-6 text-center">
+        <div className="text-[24px] font-bold pt-6 text-center">
           Nuron Statistics
         </div>
-        <div className="counters-container flex flex-row  justify-evenly text-center">
+        <div className="counters-container flex flex-row justify-evenly text-center">
           <div
             className="counter shadow-md"
             style={{
-              border: "1px solid  #ccc",
+              border: "1px solid #ccc",
               padding: "50px",
               margin: "50px",
             }}
           >
-            <CountUp end={100} duration={5}>
-              {({ countUpRef }) => (
-                <div>
-                  <span
-                    className="text-[#00a3ff] text-[30px] font-bold"
-                    ref={countUpRef}
-                  />
-                </div>
-              )}
-            </CountUp>
+            <div>
+              <span className="text-[#00a3ff] text-[30px] font-bold">
+                {count1}
+              </span>
+            </div>
             <div className="counter-label font-bold">Nuron All NFT's</div>
           </div>
           <div
@@ -94,17 +134,12 @@ const AboutUs = () => {
               margin: "50px",
             }}
           >
-            <CountUp end={500} duration={7}>
-              {({ countUpRef }) => (
-                <div>
-                  <span
-                    className="text-[#00a3ff] text-[30px] font-bold"
-                    ref={countUpRef}
-                  />
-                </div>
-              )}
-            </CountUp>
-            <div className="counter-label  font-bold">All Creators</div>
+            <div>
+              <span className="text-[#00a3ff] text-[30px] font-bold">
+                {count2}
+              </span>
+            </div>
+            <div className="counter-label font-bold">All Creators</div>
           </div>
           <div
             className="counter shadow-md"
@@ -114,17 +149,12 @@ const AboutUs = () => {
               margin: "50px",
             }}
           >
-            <CountUp end={700} duration={9}>
-              {({ countUpRef }) => (
-                <div>
-                  <span
-                    className="text-[#00a3ff] text-[30px] font-bold"
-                    ref={countUpRef}
-                  />
-                </div>
-              )}
-            </CountUp>
-            <div className="counter-label  font-bold">Nuron Earning</div>
+            <div>
+              <span className="text-[#00a3ff] text-[30px] font-bold">
+                {count3}
+              </span>
+            </div>
+            <div className="counter-label font-bold">Nuron Earning</div>
           </div>
           <div
             className="counter shadow-md"
@@ -134,17 +164,12 @@ const AboutUs = () => {
               margin: "50px",
             }}
           >
-            <CountUp end={900} duration={11}>
-              {({ countUpRef }) => (
-                <div>
-                  <span
-                    className="text-[#00a3ff] text-[30px] font-bold"
-                    ref={countUpRef}
-                  />
-                </div>
-              )}
-            </CountUp>
-            <div className="counter-label  font-bold">Level One Seller</div>
+            <div>
+              <span className="text-[#00a3ff] text-[30px] font-bold">
+                {count4}
+              </span>
+            </div>
+            <div className="counter-label font-bold">Level One Seller</div>
           </div>
         </div>
       </div>
