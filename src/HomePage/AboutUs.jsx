@@ -3,53 +3,52 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import backgroundimage1 from "../Images/bg-image-22.webp";
 import backgroundimage2 from "../Images/bg-image-6.webp";
-import CountUp from "react-countup";
 
 const AboutUs = () => {
-  const [count1, setCount1] = useState(0);
-  const [count2, setCount2] = useState(0);
-  const [count3, setCount3] = useState(0);
-  const [count4, setCount4] = useState(0);
+    const [count1, setCount1] = useState(0);
+    const [count2, setCount2] = useState(0);
+    const [count3, setCount3] = useState(0);
+    const [count4, setCount4] = useState(0);
 
-  useEffect(() => {
-    const timer1 = setInterval(() => {
-      if (count1 < 100) {
-        setCount1(count1 + 1);
-      }
-    }, 10);
+    useEffect(() => {
+      const timer1 = setInterval(() => {
+        if (count1 < 100) {
+          setCount1(count1 + 1);
+        }
+      }, 10);
 
-    return () => clearInterval(timer1);
-  }, [count1]);
+      return () => clearInterval(timer1);
+    }, [count1]);
 
-  useEffect(() => {
-    const timer2 = setInterval(() => {
-      if (count2 < 500) {
-        setCount2(count2 + 1);
-      }
-    }, 10);
+    useEffect(() => {
+      const timer2 = setInterval(() => {
+        if (count2 < 500) {
+          setCount2(count2 + 1);
+        }
+      }, 10);
 
-    return () => clearInterval(timer2);
-  }, [count2]);
+      return () => clearInterval(timer2);
+    }, [count2]);
 
-  useEffect(() => {
-    const timer3 = setInterval(() => {
-      if (count3 < 700) {
-        setCount3(count3 + 1);
-      }
-    }, 10);
+    useEffect(() => {
+      const timer3 = setInterval(() => {
+        if (count3 < 700) {
+          setCount3(count3 + 1);
+        }
+      }, 10);
 
-    return () => clearInterval(timer3);
-  }, [count3]);
+      return () => clearInterval(timer3);
+    }, [count3]);
 
-  useEffect(() => {
-    const timer4 = setInterval(() => {
-      if (count4 < 900) {
-        setCount4(count4 + 1);
-      }
-    }, 10);
+    useEffect(() => {
+      const timer4 = setInterval(() => {
+        if (count4 < 900) {
+          setCount4(count4 + 1);
+        }
+      }, 10);
 
-    return () => clearInterval(timer4);
-  }, [count4]);
+      return () => clearInterval(timer4);
+    }, [count4]);
 
   return (
     <div>
