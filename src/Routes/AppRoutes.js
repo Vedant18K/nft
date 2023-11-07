@@ -8,7 +8,7 @@ import Home from '../HomePage/Home';
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             
             <Route path="/about" element={<AboutUs />} />
             
