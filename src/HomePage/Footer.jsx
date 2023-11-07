@@ -31,7 +31,7 @@ const Footer = () => {
   ];
   return (
     <div>
-      <div className="flex justify-between m-[80px]  py-4">
+      <div className="flex justify-between m-[80px]" >
         <div>
           <div className="pt-4 pb-4">
             Created with the collaboration of over

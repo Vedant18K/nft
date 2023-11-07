@@ -1,13 +1,16 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import Header from '../HomePage.js/Header';
-import Slider from '../HomePage.js/Slider';
+
+import AboutUs from '../HomePage/AboutUs';
+import Home from '../HomePage/Home';
+
 
 const AppRoutes = () => {
     return (
         <Routes>
-            <Route path="/" element={<Header />} />
-            <Route path="/slider" element={<Slider />} />
+            <Route path="/home" element={<Home />} />
+            
+            <Route path="/about" element={<AboutUs />} />
             
             
 
