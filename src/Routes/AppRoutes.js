@@ -5,6 +5,8 @@ import AboutUs from '../HomePage/AboutUs';
 import Home from '../HomePage/Home';
 import Contact from '../ContactUs/Contact';
 
+import Blog from '../Blog/Blog';
+
 
 const AppRoutes = () => {
     return (
@@ -13,6 +15,7 @@ const AppRoutes = () => {
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
     
             
 

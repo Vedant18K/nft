@@ -3,7 +3,7 @@ import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 export default function MapComponent() {
   const params = new URLSearchParams({
-    q: 'Berlin, Germany', // Specify the location by name
+    q: 'India', // Specify the location by name
     hl: 'en', // Specify English as the language
   });
 
