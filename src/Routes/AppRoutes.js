@@ -9,6 +9,7 @@ import Footer from "../HomePage/Footer"
 import Blog from '../Blog/Blog';
 import Notification from '../Notification/Notification';
 import Pages from '../Pages/Pages';
+import Expores from '../Explore/Expores';
 
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/notification" element={<Notification/>}/>
+            <Route path="/explore" element={<Expores/>}/>
             <Route path="/pages" element={<Pages/>}/>
         </Routes>
         <Footer/>

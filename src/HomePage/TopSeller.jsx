@@ -86,8 +86,7 @@ const TopSeller = () => {
 
   return (
     <div>
-      <div>Top Seller in
-1 day</div>
+      <div className='px-4 text-[24px] font-bold'>Top Seller in 1 day</div>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 px-4">
       {topSellers.map((seller, index) => (
         <div

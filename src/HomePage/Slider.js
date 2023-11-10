@@ -8,8 +8,8 @@ const Slider = () => {
                 <div className='text-6xl pt-14	'>Discover Digital Art,<p /> Collect and Sell Your <p />Specific NFTs.</div>
                 <div className='text-xl pt-14'>Partner with one of the world's largest retailers to <p />showcase your brand and products.</div>
                 <div className='flex gap-4 text-white pt-14'>
-                    <div className='bg-[#00a3ff] rounded-lg px-4 py-4 cursor-pointer'>Get Started</div>
-                    <div className='bg-[#212e48] rounded-lg px-4 py-4 cursor-pointer'>Create</div>
+                    <div className='bg-[#00a3ff] rounded-lg px-4 py-4 cursor-pointer hover:bg-[#212e48]'>Get Started</div>
+                    <div className='bg-[#212e48] rounded-lg px-4 py-4 cursor-pointer hover:bg-[#00a3ff]'>Create</div>
                 </div>
             </div>
             <div>
