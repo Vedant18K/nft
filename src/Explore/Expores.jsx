@@ -1,13 +1,17 @@
 import React from 'react'
-
-import NewestItem from '../HomePage/NewestItem'
+import LiveBidding from "../HomePage/LiveBidding";
+import { array , array1 } from '../Data/Data';
 
 const Expores = () => {
+   
+
   return (
     <div>
-        <div>Explore Style Isotop</div>
+        <div className='pt-[100px]'>Explore Style Isotop</div>
         <div>Explore Product</div>
-        <NewestItem/>
+        <LiveBidding array={array}/>
+        <LiveBidding array={array1}/>
+        
     </div>
   )
 }
