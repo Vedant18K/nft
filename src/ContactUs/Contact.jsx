@@ -1,6 +1,5 @@
   import React from "react";
-  import NavBar from "../HomePage/NavBar";
-  import Footer from "../HomePage/Footer";
+ 
   import sideimg from "../Images/contact1.webp"
 import MapComponent from "./MapComponent";
 
@@ -8,14 +7,15 @@ import MapComponent from "./MapComponent";
     return (
       <div>
         <div>
-          <NavBar />
-          <div className="pt-[100px] text-center">
+          {/* <NavBar /> */}
+          <div className="pt-[100px] text-center text-[24px] font-bold">
             <div>Quick Contact Address</div>
-            <div>
+            
+          </div>
+          <div className="text-center text-[18px]">
               There are many variations of passages of Lorem Ipsum available, but
               the majority have suffered alteration.
             </div>
-          </div>
           <div className="flex justify-evenly items-center m-10">
             <div className="border shadow-xl p-[80px]">
               <div className="text-[20px] font-bold pb-8">Contact Phone Number</div>
@@ -59,7 +59,7 @@ import MapComponent from "./MapComponent";
               </div>
           </div>
           <MapComponent/>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
         
       </div>

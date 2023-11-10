@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import logoicon from "../Images/logo-dark.webp";
 import bellicon from "../Images/bell.svg";
 import darktheme from "../Images/moon.svg";
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-        <div className="flex pt-4    fixed bg-white z-20 w-full">
+      <div className="flex pt-4    fixed bg-white z-20 w-full">
         <div>
           <div>
             <img alt="logoicon" src={logoicon}></img>
@@ -16,12 +16,20 @@ const NavBar = () => {
         <div className="flex justify-between w-[90%]">
           <div>
             <ul className="flex px-10 pt-2 gap-7">
-              <li><Link to="/home"> Home</Link></li>
-              <li><Link to="/about"> About</Link></li>
+              <li>
+                <Link to="/home"> Home</Link>
+              </li>
+              <li>
+                <Link to="/about"> About</Link>
+              </li>
               <li>Explore</li>
-              <li>Pages</li>
-              <li><Link to="/blog"> Blog</Link></li>
-              <li><Link to="/contact"> Contact</Link></li>
+              <li><Link to="/pages"> Pages</Link></li>
+              <li>
+                <Link to="/blog"> Blog</Link>
+              </li>
+              <li>
+                <Link to="/contact"> Contact</Link>
+              </li>
             </ul>
           </div>
           <div className="flex pt-2  ">
@@ -38,7 +46,9 @@ const NavBar = () => {
               </button>
             </div>
             <div>
-              <img alt="bellicon" src={bellicon} />
+              <Link to="/notification">
+                <img alt="bellicon" src={bellicon} />
+              </Link>
             </div>
             <div>
               {" "}
@@ -48,7 +58,7 @@ const NavBar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

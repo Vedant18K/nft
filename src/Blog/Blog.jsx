@@ -1,6 +1,5 @@
 import React from "react";
-import NavBar from "../HomePage/NavBar";
-import Footer from "../HomePage/Footer"
+
 
 import blog1 from "../Images/blog1.webp";
 import blog2 from "../Images/blog2.webp";
@@ -65,8 +64,8 @@ const Blog = () => {
 
   return (
     <div>
-      <NavBar />
-      <div className="pt-[100px]">Our Blog</div>
+      {/* <NavBar /> */}
+      <div className="pt-[100px] px-5 text-[24px] font-bold">Our Blog</div>
       <div className="flex flex-wrap mx-16 justify-between">
         {/* Render the blog items using map */}
         {blog.map((blogItem, index) => (
@@ -86,7 +85,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };

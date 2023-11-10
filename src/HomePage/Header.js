@@ -60,7 +60,7 @@ const Header = () => {
       <NewestItem />
       <TopSeller />
       <TopCollection />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

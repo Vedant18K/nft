@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import backgroundimage1 from "../Images/bg-image-22.webp";
 import backgroundimage2 from "../Images/bg-image-6.webp";
+import Blog from "../Blog/Blog";
 
 const AboutUs = () => {
     const [count1, setCount1] = useState(0);
@@ -52,7 +51,7 @@ const AboutUs = () => {
 
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="pt-[100px] text-[40px] px-10">
         Direct Teams.
         <br /> For Your Dedicated Dreams
@@ -185,7 +184,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Blog/>
+      {/* <Footer /> */}
     </div>
   );
 };
