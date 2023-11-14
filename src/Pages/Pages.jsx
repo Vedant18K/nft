@@ -1,8 +1,11 @@
 import React from 'react'
+import Notification from '../Notification/Notification'
 
 const Pages = () => {
   return (
-    <div></div>
+    <div>
+      <Notification/>
+    </div>
   )
 }
 

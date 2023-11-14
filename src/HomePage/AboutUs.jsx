@@ -108,7 +108,7 @@ const AboutUs = () => {
         <div className="text-[24px] font-bold pt-6 text-center">
           Nuron Statistics
         </div>
-        <div className="counters-container flex flex-row justify-evenly text-center">
+        <div className="counters-container flex flex-row  flex-wrap justify-evenly text-center">
           <div
             className="counter shadow-md"
             style={{

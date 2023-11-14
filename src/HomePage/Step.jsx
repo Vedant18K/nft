@@ -49,7 +49,7 @@ const Step = () => {
   return (
     <div>
       <div className="container px-14 font-bold text-[24px]">Create and sell your NFTs</div>
-    <div className="flex justify-center px-20 gap-10 pt-[80px]">
+    <div className="flex flex-wrap justify-center px-20 gap-10 pt-[80px] ">
       
       {steps.map((step, index) => (
         <div

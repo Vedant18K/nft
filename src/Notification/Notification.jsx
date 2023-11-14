@@ -64,7 +64,7 @@ const Notification = () => {
   return (
     <div>
       {/* <NavBar /> */}
-      <div className="pt-20">All following Activity</div>
+      <div className="pt-[100px] text-[24px] font-bold ">All following Activity</div>
       <div className="container mx-[10px]">
         {notificationArray.map((activityItem, index) => (
           <div className="flex border rounded-lg shadow-lg w-[50%] mx-auto my-5" key={index}>

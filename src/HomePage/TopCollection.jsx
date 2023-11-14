@@ -51,7 +51,7 @@ const TopCollection = () => {
   return (
     <div>
       <div className="text-[24px] font-bold pt-10 px-4">Top Collection</div>
-      <div className="flex justify-between px-6 pt-10 pb-4 ">
+      <div className="flex flex-wrap justify-between px-6 pt-10 pb-4 ">
         {largearray.map((collection, index) => (
           <div className=" border px-4 py-4 rounded-xl shadow-2xl" key={index}>
             <div className=" rounded-md">
