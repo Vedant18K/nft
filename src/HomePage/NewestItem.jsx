@@ -3,7 +3,6 @@ import React from "react";
 // import livebiddingimg10 from "../Images/new1.webp";
 import LiveBidding from "./LiveBidding";
 import Step from "./Step";
-import Expores from "../Explore/Expores";
 import { array, array1 } from "../Data/Data";
 
 const NewestItem = () => {
