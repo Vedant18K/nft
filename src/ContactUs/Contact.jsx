@@ -47,7 +47,7 @@ import MapComponent from "./MapComponent";
                   </div>
                   <div className="pt-3">
                       <div className="mb-2">Subject</div>
-                      <div><input className="border rounded-md shadow-md w-[400px] h-[40px]" /></div>
+                      <div><input className="border rounded-md shadow-md w-[400px] h-[40px] "   /></div>
                   </div>
                   <div className="pt-3">
                       <div className="mb-2">Write Message</div>

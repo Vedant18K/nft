@@ -50,13 +50,13 @@ const Footer = () => {
           <div className="font-bold text-[24px]">Nuron</div>
           <div className="pt-4">
             <ul>
-              <div className="pt-2">Protocol Explore</div>
-              <div className="pt-2">System Token</div>
-              <div className="pt-2">Otimize Time</div>
-              <div className="pt-2">Visual Checking</div>
-              <div className="pt-2">Fadeup System</div>
-              <div className="pt-2">Activity Log</div>
-              <div className="pt-2">System Auto Since</div>
+              <div className="pt-2 hover:text-[#00a3ff]">Protocol Explore</div>
+              <div className="pt-2 hover:text-[#00a3ff]">System Token</div>
+              <div className="pt-2 hover:text-[#00a3ff]">Otimize Time</div>
+              <div className="pt-2 hover:text-[#00a3ff]">Visual Checking</div>
+              <div className="pt-2 hover:text-[#00a3ff]">Fadeup System</div>
+              <div className="pt-2 hover:text-[#00a3ff]">Activity Log</div>
+              <div className="pt-2 hover:text-[#00a3ff]">System Auto Since</div>
             </ul>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Footer = () => {
           <div className="font-bold text-[24px]">Information</div>
           <div className="pt-4 ">
             <ul>
-              <div className="pt-2 hover:text-[#00a3ff] hover:scale-110 hover:border-b-2 hover:border-blue-500 transition-transform duration-300 ">Market Explore</div>
+              <div className="pt-2 hover:text-[#00a3ff]  ">Market Explore</div>
               <div className="pt-2 hover:text-[#00a3ff] ">Ready Token</div>
               <div className="pt-2 hover:text-[#00a3ff]">Otimize Time</div>
               <div className="pt-2 hover:text-[#00a3ff]">Main Option</div>

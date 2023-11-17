@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import logoicon from "../Images/logo-dark.webp";
 import bellicon from "../Images/bell.svg";
 import darktheme from "../Images/moon.svg";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  // Close the dropdown when clicking outside of it
+  const closeDropdown = () => {
+    setShowDropdown(false);
+  };
+
   return (
     <div>
-      <div className="flex pt-4    fixed bg-white z-20 w-full">
+      <div className="flex pt-4 fixed bg-white z-20 w-full">
         <div>
           <div>
             <img alt="logoicon" src={logoicon}></img>
@@ -22,8 +33,32 @@ const NavBar = () => {
               <li>
                 <Link to="/about"> About</Link>
               </li>
-              <li><Link to="/explore"> Explore</Link></li>
-              <li><Link to="/pages"> Pages</Link></li>
+              <li>
+                <div className="relative">
+                  <Link to="/pages" onClick={toggleDropdown}>
+                    Pages
+                  </Link>
+                  {showDropdown && (
+                    <ul
+                      className="absolute mt-2 bg-white border rounded-md shadow-md"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <li className="w-[100px] ">
+                        <Link to="/create-nft" onClick={closeDropdown}>
+                          Create NFT
+                        </Link>
+                      </li>
+
+                      <li className="w-[100px] ">
+                        <Link to="/user-type" onClick={closeDropdown}>
+                          User Type
+                        </Link>
+                      </li>
+                     
+                    </ul>
+                  )}
+                </div>
+              </li>
               <li>
                 <Link to="/blog"> Blog</Link>
               </li>
@@ -32,16 +67,16 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="flex pt-2  ">
+          <div className="flex pt-2">
             <div>
               <input
                 placeholder="search Here"
                 type="text"
-                className="bg-transparent "
+                className="bg-transparent"
               />
             </div>
             <div>
-              <button className=" border 2 solid rounded-md px-2 text-white bg-[#212e48] hover:bg-[#00a3ff] whitespace-nowrap">
+              <button className="border 2 solid rounded-md px-2 text-white bg-[#212e48] hover:bg-[#00a3ff] whitespace-nowrap">
                 Connect Wallet
               </button>
             </div>

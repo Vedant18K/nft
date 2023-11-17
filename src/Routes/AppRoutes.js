@@ -10,6 +10,7 @@ import Blog from '../Blog/Blog';
 import Notification from '../Notification/Notification';
 import Pages from '../Pages/Pages';
 import Expores from '../Explore/Expores';
+import CreateNft from '../Pages/CreateNft';
 
 
 const AppRoutes = () => {
@@ -25,6 +26,7 @@ const AppRoutes = () => {
             <Route path="/notification" element={<Notification/>}/>
             <Route path="/explore" element={<Expores/>}/>
             <Route path="/pages" element={<Pages/>}/>
+            <Route path="/create-nft" element={<CreateNft/>}/>
         </Routes>
         <Footer/>
         </div>
