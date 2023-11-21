@@ -54,6 +54,16 @@ const NavBar = () => {
                           User Type
                         </Link>
                       </li>
+                      <li className="w-[100px] ">
+                        <Link to="/login" onClick={closeDropdown}>
+                          Login
+                        </Link>
+                      </li>
+                      <li className="w-[100px] ">
+                        <Link to="/registration" onClick={closeDropdown}>
+                          Registration
+                        </Link>
+                      </li>
                      
                     </ul>
                   )}
@@ -75,11 +85,11 @@ const NavBar = () => {
                 className="bg-transparent"
               />
             </div>
-            <div>
-              <button className="border 2 solid rounded-md px-2 text-white bg-[#212e48] hover:bg-[#00a3ff] whitespace-nowrap">
+            <Link to={"/connect-wallet"}> <div>
+              <div className="border 2 solid rounded-md px-2 text-white bg-[#212e48] hover:bg-[#00a3ff] whitespace-nowrap">
                 Connect Wallet
-              </button>
-            </div>
+              </div>
+            </div></Link>
             <div>
               <Link to="/notification">
                 <img alt="bellicon" src={bellicon} />

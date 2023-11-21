@@ -11,6 +11,10 @@ import Notification from '../Notification/Notification';
 import Pages from '../Pages/Pages';
 import Expores from '../Explore/Expores';
 import CreateNft from '../Pages/CreateNft';
+import UserType from '../Pages/UserType';
+import ConnectWallet from '../Wallet/ConnectWallet';
+import Login from '../Pages/Login';
+import Registration from '../Pages/Registration';
 
 
 const AppRoutes = () => {
@@ -27,6 +31,10 @@ const AppRoutes = () => {
             <Route path="/explore" element={<Expores/>}/>
             <Route path="/pages" element={<Pages/>}/>
             <Route path="/create-nft" element={<CreateNft/>}/>
+            <Route path="/user-type" element={<UserType/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/registration" element={<Registration/>}/>
+            <Route path="/connect-wallet" element={<ConnectWallet/>}/>
         </Routes>
         <Footer/>
         </div>
